@@ -233,6 +233,12 @@ body{
 /* 箭頭*/
 .arrowBTN img{
     width: 20px;
+    transition: 0.2s;
+}
+
+.arrowBTN img:hover{
+    transition: 0.2s;
+    transform:scale(1.2);
 }
 
 .inf .Arrow_Frame{
@@ -257,9 +263,11 @@ body{
     display: flex;
     justify-content: flex-start;
     z-index: 1;
-    overflow-x: scroll;
+    /* x軸滾條 */
+    overflow-x: hidden;
+    /* 隱藏y軸滾條 */
     overflow-y:hidden ;
-    scroll-margin-inline-end: revert;
+    
 }
 
 /* 滑動條 */
@@ -280,8 +288,11 @@ body{
 
 /* 單張圖片挑整 */
 .inf .info_SingleImg{
+    position: relative;
+    right: 450px;
     height: 470px;
     margin: 20px 25px;
+    transition: 0.4s;
 }
 
 /*====== 幹部介紹 ======*/
